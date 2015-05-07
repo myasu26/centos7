@@ -1,11 +1,23 @@
---2015-05-07 11:54:26--  https://raw.githubusercontent.com/myasu26/jessie_basic_jp/master/.gitignore
-Resolving raw.githubusercontent.com... 199.27.75.133
-Connecting to raw.githubusercontent.com|199.27.75.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 267 [text/plain]
-Saving to: '.gitignore.1'
+Thumbs.db
+/.git
 
-     0K                                                       100% 86.9M=0s
+# Ignore bundler config.
+/.bundle
 
-2015-05-07 11:54:27 (86.9 MB/s) - '.gitignore.1' saved [267/267]
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
 
+# Ignore all logfiles and tempfiles.
+/log/*.log
+./*.log
+/tmp
+
+# Ignore other unneeded files.
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
