@@ -5,4 +5,3 @@ RUN sed -ri 's/^#PermitRootLogin yes/#PermitRootLogin without-password/' /etc/ss
 RUN sed -ri 's/^PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 RUN sed -ri 's/^#Port 22/Port 22/' /etc/ssh/sshd_config
 EXPOSE 22
-CMD ["/usr/sbin/init","3"]
