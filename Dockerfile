@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER "you" <hot@email.here>
+MAINTAINER "you and me" <dummy@email.here>
 ENV container docker
 RUN yum -y swap -- remove fakesystemd -- install systemd systemd-libs
 RUN yum -y update; yum clean all; \

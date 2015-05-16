@@ -1,2 +1,2 @@
 # CentOS7 ssh
-* docker run --privileged -tid --name centOS7 -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 7722:22 centos7/ssh
+* docker run -tid --name centos7 -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p port:22 myasu26/centos7
