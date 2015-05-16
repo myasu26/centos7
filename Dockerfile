@@ -4,5 +4,4 @@ RUN mkdir ~/.ssh; curl -o ~/.ssh/authorized_keys https://github.com/myasu26.keys
 RUN sed -ri 's/^#PermitRootLogin yes/#PermitRootLogin without-password/' /etc/ssh/sshd_config
 RUN sed -ri 's/^PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 EXPOSE 22
-VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/usr/sbin/init","3"]
